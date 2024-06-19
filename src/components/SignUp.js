@@ -1,0 +1,74 @@
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+
+const SignUp = () => {
+    const [isSignUpForm, setSignUpForm] = useState(false);
+    const [email, setEmail] = useState(null)
+    const password = useRef()
+    const handleOnClick = () => {
+        setSignUpForm(true);
+    };
+    return isSignUpForm === false ? (
+        <div className="absolute w-full h-full top-0 left-0 right-0  bg-black sm:bg-opacity-55">
+            <form className="w-full h-fit sm:w-[50%] lg:w-[30%] my-20 lg:my-40 sm:my-10 text-center mx-auto px-8 sm:px-14 sm:py-3 lg:py-10 lg:pb-28 bg-black bg-opacity-75 grid gap-3 lg:gap-7 ">
+                <label className="text-white text-left text-4xl font-bold">Sign Up</label>
+                <input
+                    className="px-5 py-3 rounded-md bg-black bg-opacity-10 border border-solid border-neutral-500 text-white"
+                    type="email"
+                    placeholder="Email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    ref={password}
+                    className="px-5 py-3 rounded-md bg-black bg-opacity-10 border border-solid border-neutral-500 text-white"
+                    type="password"
+                    placeholder="Password"
+                />
+                <button className="bg-red-600 w-full py-3 text-white font-medium rounded-md">
+                    Sign Up
+                </button>
+                <div className="text-left px-2 flex items-center">
+                    <input type="checkbox" className="size-5 mr-2" />
+                    <label className="text-white text-lg">Remember me?</label>
+                </div>
+                <h1 className="text-white text-left">
+                    Already a member?
+                    <Link to="/signIn" className="font-semibold hover:underline">
+                        Sign In
+                    </Link>
+                </h1>
+            </form>
+        </div>
+    ) : (
+        <div className="absolute w-full h-full top-0 left-0 right-0  bg-black bg-opacity-65">
+            <div className="text-white text-center sm:my-64 sm:grid sm:gap-6  hidden">
+                <h1 className="font-extrabold text-5xl ">
+                    Unlimited movies, TV shows and more
+                </h1>
+                <h1 className="text-3xl">Watch anywhere. Cancel anytime.</h1>
+                <h1 className="text-3xl">
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                </h1>
+                <div className="flex justify-center items-center">
+                    <input
+                        className=" mr-4 border border-solid border-neutral-500 w-[20%] px-4 py-4 bg-black bg-opacity-65"
+                        type="email"
+                        placeholder="Email address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button
+                        className="bg-red-600 text-white font-semibold text-2xl px-8 py-3 rounded-md"
+                        onClick={handleOnClick}
+                    >
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default SignUp;
