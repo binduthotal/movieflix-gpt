@@ -5,6 +5,9 @@
 - install redux-react ,@reactjs/toolkit
 - Provide Routing for signUp and SignIn page
 - SignUp page and SignIn page Degin completed successfully
+- Add firebase to the application to create authentication
+- Firebase authentication with email is done
+- SignUp, SignIn, Forgor password, Google signIn is created usind firebase Authentication
 
 # Features to be developed
 - SignUp page
