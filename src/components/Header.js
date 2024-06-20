@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -9,10 +9,12 @@ import { addUser, removeUser } from "../reduxStore/userSlice";
 const Header = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const [userSignedIn, setUserSignedIn] = useState(false);
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
+                setUserSignedIn(true);
                 // User is signed in, see docs for a list of available properties
                 // https://firebase.google.com/docs/reference/js/auth.user
                 const { uid, displayName, email, photoURL } = user;
@@ -44,23 +46,43 @@ const Header = () => {
                 // An error happened.
             });
     };
+
+    const handleGptSearch = () => { };
+
     return (
         <div className="absolute top-0 bg-gradient-to-b from-black bg-opacity-55 w-full ">
-            <div className="flex justify-between mx-10 sm:mx-10 lg:mx-52 mt-5 items-center">
+            {/* <div className="flex justify-between mx-10 sm:mx-10 lg:mx-52 mt-5 items-center"> */}
+            <div
+                className={
+                    (userSignedIn ? "lg:mx-10" : "lg:mx-52",
+                        "flex justify-between mx-10 sm:mx-10 mt-5 items-center")
+                }
+            >
                 <a href="/">
                     <img className="w-28 sm:w-40" src={LOGO_URL} alt="logo" />
                 </a>
-                <Link to="/signIn">
-                    <button className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1">
-                        Sign In
-                    </button>
-                </Link>
-                <button
-                    className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1"
-                    onClick={handleSignOut}
-                >
-                    Sign Out
-                </button>
+                {userSignedIn ? (
+                    <div className="flex justify-around">
+                        <button
+                            className="rounded-lg bg-purple-700 text-white font-semibold px-4 py-1 mr-4"
+                            onClick={handleGptSearch}
+                        >
+                            Gpt Search
+                        </button>
+                        <button
+                            className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1"
+                            onClick={handleSignOut}
+                        >
+                            Sign Out
+                        </button>
+                    </div>
+                ) : (
+                    <Link to="/signIn">
+                        <button className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1">
+                            Sign In
+                        </button>
+                    </Link>
+                )}
             </div>
         </div>
     );

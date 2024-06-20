@@ -7,7 +7,10 @@
 - SignUp page and SignIn page Degin completed successfully
 - Add firebase to the application to create authentication
 - Firebase authentication with email is done
-- SignUp, SignIn, Forgor password, Google signIn is created usind firebase Authentication
+- SignUp, SignIn, Forgot password, Google signIn is created usind firebase Authentication
+- After signIn routed to browse page
+- Main container is created with video title and background trailer play
+- now playing movies is fetched form TMDB movies using TMDB API
 
 # Features to be developed
 - SignUp page
