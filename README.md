@@ -7,7 +7,12 @@
 - SignUp page and SignIn page Degin completed successfully
 - Add firebase to the application to create authentication
 - Firebase authentication with email is done
-- SignUp, SignIn, Forgor password, Google signIn is created usind firebase Authentication
+- SignUp, SignIn, Forgot password, Google signIn is created usind firebase Authentication
+- After signIn routed to browse page
+- Main container is created with video title and background trailer play
+- now playing movies is fetched form TMDB movies using TMDB API
+- Main Container with movie trailer and populate Nowplaying Upcoming etc is completed
+- Created Gpt Search Page and routed from browser.ToDO: develop gpt search in search page
 
 # Features to be developed
 - SignUp page
