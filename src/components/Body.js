@@ -1,17 +1,13 @@
 import React from "react";
-import { BACKGROUNG_IMG_URL } from "../utils/constants";
 import Header from "./Header";
 import { Outlet } from "react-router";
+import BackgroundImg from "./BackgroundImg";
 
 const Body = () => {
 
     return (
         <div className="w-full max-h-full bg-black">
-            <img
-                className="w-full h-lvh object-cover hidden sm:block"
-                alt="Background"
-                src={BACKGROUNG_IMG_URL}
-            />
+            <BackgroundImg/>
             <Outlet />
             <Header />
         </div>

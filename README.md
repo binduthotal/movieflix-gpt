@@ -13,6 +13,8 @@
 - now playing movies is fetched form TMDB movies using TMDB API
 - Main Container with movie trailer and populate Nowplaying Upcoming etc is completed
 - Created Gpt Search Page and routed from browser.ToDO: develop gpt search in search page
+- Language change option is create on gpt search page for search bar
+- search bar with input and search button is created
 
 # Features to be developed
 - SignUp page

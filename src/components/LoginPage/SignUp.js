@@ -1,11 +1,11 @@
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../utils/firebaseConfig";
-import { USER_PHOTO_URL } from "../utils/constants";
+import { auth } from "../../utils/firebaseConfig";
+import { USER_PHOTO_URL } from "../../utils/constants";
 import { useDispatch } from "react-redux";
-import { addUser } from "../reduxStore/userSlice";
-import { checkValidData } from "../utils/checkValidation";
+import { addUser } from "../../reduxStore/userSlice";
+import { checkValidData } from "../../utils/checkValidation";
 import GoogleSignIn from "./GoogleSignIn";
 
 const SignUp = () => {
