@@ -6,7 +6,6 @@ const BackgroundPlayVideo = (movieId) => {
 
     useGetTrailerVideo(movieId);
     const trailer = useSelector((store) => store.movies?.trailerVideo);
-    console.log(trailer);
     const key = trailer?.key
 
     return (

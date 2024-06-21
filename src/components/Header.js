@@ -3,10 +3,13 @@ import { LOGO_URL } from "../utils/constants";
 import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebaseConfig";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../reduxStore/userSlice";
+import { toggleGptSearchView } from "../reduxStore/gptSlice";
 
 const Header = () => {
+
+    const toggleGpt = useSelector((store) => store.gptSearch.showGptSearchPage);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [userSignedIn, setUserSignedIn] = useState(false);
@@ -33,7 +36,6 @@ const Header = () => {
                 navigate("/");
             }
         });
-
         return () => unSubscribe();
     }, []);
 
@@ -47,16 +49,16 @@ const Header = () => {
             });
     };
 
-    const handleGptSearch = () => { };
+    const handleGptSearch = () => {
+        dispatch(toggleGptSearchView());
+    };
 
     return (
         <div className="absolute top-0 bg-gradient-to-b from-black bg-opacity-55 w-full ">
             {/* <div className="flex justify-between mx-10 sm:mx-10 lg:mx-52 mt-5 items-center"> */}
             <div
-                className={
-                    (userSignedIn ? "lg:mx-10" : "lg:mx-52",
-                        "flex justify-between mx-10 sm:mx-10 mt-5 items-center")
-                }
+                className={`${!toggleGpt && "flex justify-between"}  mx-4 mt-5 items-center ${userSignedIn ? "lg:mx-5" : "lg:mx-52"
+                    } `}
             >
                 <a href="/">
                     <img className="w-28 sm:w-40" src={LOGO_URL} alt="logo" />
@@ -67,8 +69,15 @@ const Header = () => {
                             className="rounded-lg bg-purple-700 text-white font-semibold px-4 py-1 mr-4"
                             onClick={handleGptSearch}
                         >
-                            Gpt Search
+                            {toggleGpt ? "Home" : "Gpt Search"}
                         </button>
+                        {toggleGpt && (
+                            <select
+                                className="rounded-lg  text-black font-semibold px-4 py-1"
+                            >
+                                <option value="eng">English</option>
+                            </select>
+                        )}
                         <button
                             className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1"
                             onClick={handleSignOut}

@@ -1,0 +1,316 @@
+{
+    "users": [
+        {
+            "name": "Pandu",
+            "gender": "M",
+            "childOf": 0,
+            "uniqueid": "P",
+            "momuid": "",
+            "nevermarried": false,
+            "noinfo": false,
+            "died": true,
+            "noOfSpouses": 2,
+            "noOfKids": 5,
+            "spouses": [
+                {
+                    "sname": "Kunti",
+                    "sgender": "F",
+                    "suniqueid": "P1",
+                    "sisrelative": false,
+                    "sinternalid": "",
+                    "nokids": false
+                },
+                {
+                    "sname": "Madri",
+                    "sgender": "F",
+                    "suniqueid": "P2",
+                    "sisrelative": false,
+                    "sinternalid": "",
+                    "nokids": false
+                }
+            ],
+            "children": [
+                {
+                    "name": "Yudhishthira",
+                    "gender": "M",
+                    "childOf": 1,
+                    "uniqueid": "P11",
+                    "momuid": "P1",
+                    "nevermarried": false,
+                    "noinfo": false,
+                    "died": false,
+                    "noOfSpouses": 1,
+                    "noOfKids": 2,
+                    "spouses": [
+                        {
+                            "sname": "Draupadi",
+                            "sgender": "F",
+                            "suniqueid": "P11S1",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "Prativindhya",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P111",
+                            "momuid": "P11S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        },
+                        {
+                            "name": "Sutasoma",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P112",
+                            "momuid": "P11S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Bhima",
+                    "gender": "M",
+                    "childOf": 1,
+                    "uniqueid": "P12",
+                    "momuid": "P1",
+                    "nevermarried": false,
+                    "noinfo": false,
+                    "died": false,
+                    "noOfSpouses": 1,
+                    "noOfKids": 1,
+                    "spouses": [
+                        {
+                            "sname": "Draupadi",
+                            "sgender": "F",
+                            "suniqueid": "P12S1",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "Srutakarma",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P121",
+                            "momuid": "P12S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Arjuna",
+                    "gender": "M",
+                    "childOf": 1,
+                    "uniqueid": "P13",
+                    "momuid": "P1",
+                    "nevermarried": false,
+                    "noinfo": false,
+                    "died": false,
+                    "noOfSpouses": 3,
+                    "noOfKids": 5,
+                    "spouses": [
+                        {
+                            "sname": "Draupadi",
+                            "sgender": "F",
+                            "suniqueid": "P13S1",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        },
+                        {
+                            "sname": "Subhadra",
+                            "sgender": "F",
+                            "suniqueid": "P13S2",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        },
+                        {
+                            "sname": "Ulupi",
+                            "sgender": "F",
+                            "suniqueid": "P13S3",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "Srutakirti",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P131",
+                            "momuid": "P13S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        },
+                        {
+                            "name": "Abhimanyu",
+                            "gender": "M",
+                            "childOf": 2,
+                            "uniqueid": "P132",
+                            "momuid": "P13S2",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": true,
+                            "noOfSpouses": 1,
+                            "noOfKids": 1,
+                            "spouses": [
+                                {
+                                    "sname": "Uttara",
+                                    "sgender": "F",
+                                    "suniqueid": "P132S1",
+                                    "sisrelative": false,
+                                    "sinternalid": "",
+                                    "nokids": false
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "name": "Parikshit",
+                                    "gender": "M",
+                                    "childOf": 1,
+                                    "uniqueid": "P1321",
+                                    "momuid": "P132S1",
+                                    "nevermarried": false,
+                                    "noinfo": false,
+                                    "died": false,
+                                    "noOfSpouses": 1,
+                                    "noOfKids": 1,
+                                    "spouses": [
+                                        {
+                                            "sname": "Madra Princess",
+                                            "sgender": "F",
+                                            "suniqueid": "P1321S1",
+                                            "sisrelative": false,
+                                            "sinternalid": "",
+                                            "nokids": false
+                                        }
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "Janamejaya",
+                                            "gender": "M",
+                                            "childOf": 1,
+                                            "uniqueid": "P13211",
+                                            "momuid": "P1321S1",
+                                            "nevermarried": false,
+                                            "noinfo": false,
+                                            "died": false,
+                                            "noOfSpouses": 0,
+                                            "noOfKids": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Iravan",
+                            "gender": "M",
+                            "childOf": 3,
+                            "uniqueid": "P133",
+                            "momuid": "P13S3",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": true,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Nakula",
+                    "gender": "M",
+                    "childOf": 2,
+                    "uniqueid": "P14",
+                    "momuid": "P2",
+                    "nevermarried": false,
+                    "noinfo": false,
+                    "died": false,
+                    "noOfSpouses": 1,
+                    "noOfKids": 1,
+                    "spouses": [
+                        {
+                            "sname": "Draupadi",
+                            "sgender": "F",
+                            "suniqueid": "P14S1",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "Shatanika",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P141",
+                            "momuid": "P14S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Sahadeva",
+                    "gender": "M",
+                    "childOf": 2,
+                    "uniqueid": "P15",
+                    "momuid": "P2",
+                    "nevermarried": false,
+                    "noinfo": false,
+                    "died": false,
+                    "noOfSpouses": 1,
+                    "noOfKids": 1,
+                    "spouses": [
+                        {
+                            "sname": "Draupadi",
+                            "sgender": "F",
+                            "suniqueid": "P15S1",
+                            "sisrelative": false,
+                            "sinternalid": "",
+                            "nokids": false
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "Shrutasena",
+                            "gender": "M",
+                            "childOf": 1,
+                            "uniqueid": "P151",
+                            "momuid": "P15S1",
+                            "nevermarried": false,
+                            "noinfo": false,
+                            "died": false,
+                            "noOfSpouses": 0,
+                            "noOfKids": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

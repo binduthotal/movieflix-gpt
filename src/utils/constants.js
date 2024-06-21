@@ -18,3 +18,11 @@ export const options = {
 };
 
 export const NOWPLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing";
+
+export const TOPRATED_URL = "https://api.themoviedb.org/3/movie/top_rated";
+
+export const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular";
+
+export const UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming";
+
+export const POSTER_IMG_URL = "https://image.tmdb.org/t/p/w500";

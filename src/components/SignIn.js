@@ -5,7 +5,6 @@ import {
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { auth } from "../utils/firebaseConfig";
-import { checkValidData } from "../utils/checkValidation";
 import GoogleSignIn from "./GoogleSignIn";
 
 const SignIn = () => {
