@@ -26,3 +26,10 @@ export const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular";
 export const UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming";
 
 export const POSTER_IMG_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "telugu", name: "Telugu" },
+  { identifier: "spanish", name: "Spanish" },
+];

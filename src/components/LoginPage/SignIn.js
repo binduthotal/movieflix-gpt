@@ -4,7 +4,7 @@ import {
 } from "firebase/auth";
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../utils/firebaseConfig";
+import { auth } from "../../utils/firebaseConfig";
 import GoogleSignIn from "./GoogleSignIn";
 
 const SignIn = () => {

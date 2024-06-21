@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Header";
-import useGetNowPlayingMovies from "../hooks/useGetNowPlayingMovies";
-import MainContainer from "./MainContainer";
-import SecondaryContainer from "./SecondaryContainer";
-import useGetTopRated from "../hooks/useGetTopRated";
-import useGetUpcoming from "../hooks/useGetUpcoming";
-import useGetPopular from "../hooks/useGetPopular";
+import Header from "../Header";
+import useGetNowPlayingMovies from "../../hooks/useGetNowPlayingMovies";
+import MainContainer from "./MainContainer/MainContainer";
+import SecondaryContainer from "./SecondaryContainer/SecondaryContainer";
+import useGetTopRated from "../../hooks/useGetTopRated";
+import useGetUpcoming from "../../hooks/useGetUpcoming";
+import useGetPopular from "../../hooks/useGetPopular";
 import { useSelector } from "react-redux";
-import GptSearchPage from "./GptSearchPage";
+import GptSearchPage from "../GPTSearch/GptSearchPage";
 
 const Browse = () => {
   const toggleGpt = useSelector((store) => store.gptSearch.showGptSearchPage);
