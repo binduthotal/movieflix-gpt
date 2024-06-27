@@ -8,7 +8,15 @@ export const USER_PHOTO_URL =
   "https://occ-0-2042-3662.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229";
 
 export const FIREBASE_API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
+export const FIREBASE_AUTH_DOMAIN = process.env.REACT_APP_FIREBASE_AUTH_DOMAIN;
+export const FIREBASE_PROJECTID = process.env.REACT_APP_FIREBASE_PROJECTID;
+export const FIREBASE_STORAGE_BUCKET = process.env.REACT_APP_FIREBASE_STORAGE_BUCKET;
+export const FIREBASE_MESSAGING_SENDER_ID =
+  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID;
+export const FIREBASE_APP_ID = process.env.REACT_APP_FIREBASE_APP_ID;
+export const FIREBASE_MEASUREMENT_ID = process.env.REACT_APP_FIREBASE_MEASUREMENT_ID;
 
+console.log(FIREBASE_PROJECTID);
 export const options = {
   method: "GET",
   headers: {
