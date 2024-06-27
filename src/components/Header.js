@@ -9,6 +9,8 @@ import { clearGptMovieResults, toggleGptSearchView } from "../reduxStore/gptSlic
 import { changeLanguage } from "../reduxStore/langSlice";
 
 const Header = () => {
+
+  const userDetails = useSelector((store) => store.user)
   const toggleGpt = useSelector((store) => store.gptSearch.showGptSearchPage);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -80,6 +82,11 @@ const Header = () => {
             >
               {toggleGpt ? "Home" : "Gpt Search"}
             </button>
+            <img className="rounded-lg mr-1 w-8" src={userDetails?.photoURL} alt="user" />
+            <h1 className="text-white mr-5 font-semibold text-lg">
+              {userDetails?.userName}
+            </h1>
+
             {toggleGpt && (
               <select
                 className="bg-black bg-opacity-50 border border-solid border-white rounded-lg text-white px-4 py-1 mr-5 cursor-pointer"

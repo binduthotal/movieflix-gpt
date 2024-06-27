@@ -61,13 +61,13 @@ const GptSearchBar = () => {
         className="w-fit sm:w-1/2 mx-auto grid grid-cols-12 mt-32 "
       >
         <input
-          className="col-span-10 sm:col-span-9 px-5 py-3 border border-solid border-black rounded-sm"
+          className="col-span-10 sm:col-span-9 px-5 py-3 border border-solid border-black rounded-md"
           ref={searchText}
           type="text"
           placeholder={lang[langValue].placeHolder}
         />
         <button
-          className="col-span-3 bg-red-600  text-white px-3 py-2 rounded-sm font-semibold text-xl"
+          className="col-span-3 bg-red-600  text-white px-3 py-2 rounded-md font-semibold text-xl"
           onClick={handleGptSearch}
         >
           {lang[langValue].search}
