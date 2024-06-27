@@ -14,8 +14,8 @@ const firebaseConfig = {
   projectId: "movieflix-gpt-b1364",
   storageBucket: "movieflix-gpt-b1364.appspot.com",
   messagingSenderId: "638141141506",
-  appId: "1:638141141506:web:3d39994eecd7e150db8d1b",
-  measurementId: "G-42YB07NTDS",
+  appId: "1:638141141506:web:6dbb0781fa1a74fddb8d1b",
+  measurementId: "G-133P4J7Q2V",
 };
 
 // Initialize Firebase
