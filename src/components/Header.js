@@ -42,6 +42,7 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
+        dispatch(clearGptMovieResults());
         // Sign-out successful.
       })
       .catch((error) => {
