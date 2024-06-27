@@ -5,7 +5,6 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "api_key": "AIzaSyBu1IGEyN70h8uqxYOfosumqixO6puzYl4" 
+    ]
   }
 }
