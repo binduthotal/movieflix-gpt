@@ -69,7 +69,7 @@ const SignUp = () => {
         <div className="absolute w-full h-full top-0 left-0 right-0  bg-black sm:bg-opacity-55">
             <form
                 onSubmit={(e) => e.preventDefault()}
-                className="w-full h-fit sm:w-[50%] lg:w-[30%] my-20 lg:my-36 sm:my-10 text-center mx-auto px-8 sm:px-14 sm:py-3 lg:py-9 bg-black bg-opacity-75 grid gap-3 lg:gap-5 "
+                className="w-full h-fit sm:w-[50%] lg:w-[30%] my-20 lg:my-36 md:my-20 text-center mx-auto px-8 sm:px-14 sm:py-3 lg:py-9 bg-black bg-opacity-75 grid gap-3 lg:gap-5 "
             >
                 <label className="text-white text-left text-4xl font-bold">
                     Sign Up
