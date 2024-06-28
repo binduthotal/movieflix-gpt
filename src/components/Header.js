@@ -65,31 +65,35 @@ const Header = () => {
     <div className="absolute top-0 bg-gradient-to-b from-black bg-opacity-55 w-full ">
       {/* <div className="flex justify-between mx-10 sm:mx-10 lg:mx-52 mt-5 items-center"> */}
       <div
-        className={`${
-          !toggleGpt && "flex justify-between"
-        } sm:flex sm:justify-between mx-4 mt-5 items-center ${
-          userSignedIn ? "lg:mx-10" : "lg:mx-52"
-        } `}
+        className={`${!toggleGpt && "flex justify-between"
+          } sm:flex sm:justify-between mx-4 mt-5  ${userSignedIn ? "lg:mx-10" : "lg:mx-52"
+          } `}
       >
         <a href="/">
           <img className="w-28 sm:w-40" src={LOGO_URL} alt="logo" />
         </a>
         {userSignedIn ? (
-          <div className="flex justify-around">
+          <div className="grid grid-cols-12 gap-1 sm:flex justify-around items-center">
+            <div className="col-span-6 flex items-center">
+              <img
+                className="rounded-lg mr-1 w-8"
+                src={userDetails?.photoURL}
+                alt="user"
+              />
+              <h1 className="text-white mr-5 font-semibold text-lg">
+                {userDetails?.userName}
+              </h1>
+            </div>
             <button
-              className="rounded-lg bg-purple-700 text-white font-semibold px-4 py-1 mr-4"
+              className=" col-span-6 rounded-lg bg-purple-700 text-white font-semibold px-4 py-1 mr-4"
               onClick={handleGptSearch}
             >
               {toggleGpt ? "Home" : "Gpt Search"}
             </button>
-            <img className="rounded-lg mr-1 w-8" src={userDetails?.photoURL} alt="user" />
-            <h1 className="text-white mr-5 font-semibold text-lg">
-              {userDetails?.userName}
-            </h1>
 
             {toggleGpt && (
               <select
-                className="bg-black bg-opacity-50 border border-solid border-white rounded-lg text-white px-4 py-1 mr-5 cursor-pointer"
+                className="col-span-6 bg-black bg-opacity-50 border border-solid border-white rounded-lg text-white px-4 py-1 mr-5 cursor-pointer"
                 onChange={handleLangChange}
               >
                 {SUPPORTED_LANGUAGES.map((lang) => (
@@ -104,7 +108,7 @@ const Header = () => {
               </select>
             )}
             <button
-              className="rounded-lg bg-red-600 text-white font-semibold px-4 py-1"
+              className="col-span-6 rounded-lg bg-red-600 text-white font-semibold px-4 py-1"
               onClick={handleSignOut}
             >
               Sign Out

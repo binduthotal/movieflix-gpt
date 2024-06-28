@@ -8,6 +8,7 @@ import useGetUpcoming from "../../hooks/useGetUpcoming";
 import useGetPopular from "../../hooks/useGetPopular";
 import { useSelector } from "react-redux";
 import GptSearchPage from "../GPTSearch/GptSearchPage";
+import Footer from "../footer/Footer";
 
 const Browse = () => {
   const toggleGpt = useSelector((store) => store.gptSearch.showGptSearchPage);
@@ -28,6 +29,7 @@ const Browse = () => {
           <SecondaryContainer />
         </>
       )}
+      <Footer />
     </div>
   );
 };
