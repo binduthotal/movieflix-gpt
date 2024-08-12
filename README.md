@@ -15,7 +15,9 @@
 - Created Gpt Search Page and routed from browser.ToDO: develop gpt search in search page
 - Language change option is create on gpt search page for search bar
 - search bar with input and search button is created.
-- Gemini API key is created
+- Gemini API key is created in Google Ai Studio
+- need to install npm install @google/generative-ai
+- Follow the steps in 
 - Gemini Ai is integrated into app and fetched movie suggestions
 
 # Features to be developed

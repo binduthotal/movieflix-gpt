@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../reduxStore/userSlice";
 import { clearGptMovieResults, toggleGptSearchView } from "../reduxStore/gptSlice";
 import { changeLanguage } from "../reduxStore/langSlice";
+import { clearMovieLists } from "../reduxStore/movieSlice";
 
 const Header = () => {
 
@@ -45,6 +46,7 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         dispatch(clearGptMovieResults());
+        dispatch(clearMovieLists());
         // Sign-out successful.
       })
       .catch((error) => {
