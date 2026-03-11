@@ -35,3 +35,71 @@
 -   Movieflix GPT
 -       Search Bar
 -       Movie Suggestions
+
+# MovieFlix GPT
+
+## Overview
+MovieFlix GPT is an AI-powered movie recommendation platform that helps users discover movies based on their interests. The application combines movie data from the TMDB API with GPT-based search to provide intelligent and personalized movie suggestions.
+
+The project features a Netflix-style user interface where users can browse trending movies, watch trailers, and search for movie recommendations using AI prompts.
+
+---
+
+## Features
+
+### Authentication
+- User Sign Up and Sign In
+- Firebase Authentication
+- Protected routes for logged-in users
+
+### Browse Movies
+- Netflix-style movie browsing interface
+- Featured movie with trailer background
+- Multiple movie categories and suggestions
+- Movie information and descriptions
+
+### AI Movie Search (GPT)
+- GPT-powered movie search
+- AI-generated movie recommendations
+- Search movies using natural language prompts
+
+### Additional Features
+- Multilingual support
+- Responsive design for different devices
+- State management using Redux Toolkit
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+
+### State Management
+- Redux Toolkit
+
+### APIs
+- TMDB API (Movie Data)
+- GPT API (AI Movie Recommendations)
+
+### Backend / Services
+- Firebase Authentication
+- Firebase Hosting
+
+### Tools
+- Git
+- GitHub
+- npm
+
+---
+
+## Installation
+
+### 1 Clone the repository
+
+```bash
+git clone https://github.com/binduthotal/movieflix-gpt.git
